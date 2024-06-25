@@ -1,0 +1,125 @@
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "authPanel";
+
+@import "hud";
+
+@import "chat";
+
+@import "characterCreator";
+
+@import "chooseSpawnPanel";
+
+@import "mainPage";
+
+@import "WWW_Dashboard_MainPage";
+
+@import "WWW_Dashboard_Settings";
+
+@import "loadingScreen";
+
+@import "jobs_Mower";
+
+:root {
+    font-size: max(10px, 1.2vh);
+}
+
+body {
+    background: transparent;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    max-height: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: "Source Code Pro", monospace;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #006992;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+.spinner_small {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #006992;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    margin: 1rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Popup {
+    position: fixed;
+    width: 50vw;
+    height: 50vh;
+    background: rgba(44, 58, 73, 1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: -3px 5px 51px -7px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -3px 5px 51px -7px rgba(0, 0, 0, 1);
+    box-shadow: -3px 5px 51px -7px rgba(0, 0, 0, 1);
+    border-radius: 1rem;
+
+    .Popup_Header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background: #006992;
+        font-size: 1.6rem;
+        width: 100%;
+        font-weight: bold;
+        border-radius: 1rem 1rem 0 0;
+
+        .Popup_closeButton {
+            color: #fff;
+            font-size: 4rem;
+
+            &:hover {
+                color: #afafaf;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .Popup_Content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem;
+        width: 100%;
+        overflow-y: scroll;
+        padding: 1rem;
+        margin: 1rem;
+    }
+}

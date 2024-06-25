@@ -1,0 +1,122 @@
+#www_emailVerification_notExist,
+#www_emailVerification_Done,
+#www_emailVerification_noVerified,
+#www_mainPage {
+    background: url("/storage/app/public/backgrounds/loadingscreen.png");
+    width: 100%;
+    height: 100%;
+}
+
+.WWW_MainPage {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(28, 42, 57, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .WWW_Content_Information {
+        font-size: 4rem;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .WWW_Button {
+        background: #006992;
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-radius: 1rem;
+        padding: 1rem;
+        border: 2px solid #005881;
+        outline: none;
+        color: #fff;
+
+        &:hover {
+            background: #005881;
+            cursor: pointer;
+        }
+    }
+
+    .WWW_Wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .WWW_Wrapper_Box {
+            .WWW_Wrapper_Box_Header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+                background: #006992;
+                font-size: 1.6rem;
+                width: 100%;
+                font-weight: bold;
+                border-radius: 1rem 1rem 0 0;
+            }
+
+            .WWW_Wrapper_Box_Content {
+                padding: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .WWW_EmailVerification_Text {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .WWW_Wrapper_Box_Buttons {
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(44, 58, 73, 1);
+            text-align: balance;
+            width: 40%;
+            border-radius: 1rem;
+        }
+    }
+
+    .WWW_MainPage_Header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #006992;
+        padding: 1rem;
+        width: 100%;
+
+        .WWW_MainPage_Logo {
+            img {
+                width: 5vw;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .WWW_Footer {
+        background: rgba(44, 58, 73, 1);
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}

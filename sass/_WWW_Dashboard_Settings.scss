@@ -1,0 +1,167 @@
+.WWW_Dashboard_Settings_Box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.WWW_Dashboard_Settings_Content {
+    background: #2c3e50;
+    padding: 15px;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin: 10px;
+    border: 2px solid #006992;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-width: 78%;
+    max-width: 78%;
+}
+
+.WWW_Dashboard_SettingsPage_Menu {
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.WWW_Dashboard_Settings_Option {
+    background: #006992;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+
+    &:hover {
+        background: #005881;
+        cursor: pointer;
+    }
+}
+
+.WWW_Dashboard_SettingsPage_Button {
+    background: #006992;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.WWW_Dashboard_SettingsPage_Button:hover {
+    background: #005881;
+
+    .WWW_Dashboard_SettingsPage_buttonIcon {
+        color: #006992;
+      }
+}
+
+.WWW_Dashboard_SettingsPage_buttonIcon {
+    justify-self: flex-start;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.WWW_Dashboard_SettingsPage_buttonText {
+    justify-self: flex-start;
+}
+
+.WWW_Dashboard_SettingsPage_TextInput {
+    background: #454545;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #666;
+    padding: 5px;
+    margin: 5px;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.WWW_Dashboard_SettingsPage_TextInput:focus {
+    border-bottom: 3px solid #006992;
+}
+
+.WWW_Dashboard_SettingsPage_Option_Content {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.WWW_Dashboard_SettingsPage_QrCode {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 150px;
+        max-height: 150px;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+}
+
+.WWW_Dashboard_SettingsPage_QrCodeHide {
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    text-align: center;
+    background: #444;
+    padding: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.WWW_Dashboard_SettingsPage_2fa_Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.WWW_Dashboard_SettingsPage_Input_Avatar {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.WWW_Dashboard_SettingsPage_Avatar_Preview {
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin: 20px;
+      }
+}
+
+.WWW_Dashboard_SettingsPage_Input_Avatar input[type="file"] {
+  display: none;
+}
+
+.WWW_Dashboard_SettingsPage_Input_Avatar label {
+  display: inline-block;
+  background-color: #006992;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.WWW_Dashboard_SettingsPage_Input_Avatar label:hover {
+  background-color: #005881;
+}

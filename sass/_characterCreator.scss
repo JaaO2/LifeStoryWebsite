@@ -1,0 +1,239 @@
+#characterCreator {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .CharacterCreator_ChooseSex {
+        justify-self: center;
+        align-self: center;
+        width: 20vw;
+        font-size: 1.4rem;
+        background: linear-gradient(
+                rgba(34, 34, 34, 0.8),
+                rgba(34, 34, 34, 0.8)
+            ),
+            linear-gradient(
+                to right,
+                rgba(0, 105, 146, 0.8),
+                rgba(60, 166, 214, 0.8)
+            );
+        border-radius: 1rem;
+
+        .CharacterCreator_ChooseSex_Header {
+            background: #006992;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        .CharacterCreator_ChooseSex_Content {
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .CharacterCreator_ChooseSex_Button {
+                background: #006992;
+                outline: none;
+                border: none;
+                border-radius: 1rem;
+                color: #fff;
+                margin: 1rem;
+                padding: 1rem;
+                font-weight: bold;
+
+                &:hover {
+                    background: #005881;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .characterCreator_setAppearance {
+        justify-self: center;
+        align-self: flex-start;
+        width: 18vw;
+        min-height: 70vh;
+        max-height: 70vh;
+        font-size: 1.4rem;
+        background: linear-gradient(
+                rgba(34, 34, 34, 0.8),
+                rgba(34, 34, 34, 0.8)
+            ),
+            linear-gradient(
+                to right,
+                rgba(0, 105, 146, 0.8),
+                rgba(60, 166, 214, 0.8)
+            );
+        border-radius: 1rem;
+        margin-left: 2vw;
+
+        .characterCreator_setAppearance_Header {
+            background: #006992;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        .characterCreator_setAppearance_Content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 2rem;
+            min-height: 100%;
+            max-height: 100%;
+        }
+
+        .characterCreator_setAppearance_Button {
+            background: #006992;
+            outline: none;
+            border: none;
+            border-radius: 1rem;
+            color: #fff;
+            margin: 1rem;
+            padding: 1rem;
+            font-weight: bold;
+            min-width: 100%;
+            justify-self: flex-end;
+            margin-bottom: 2rem;
+
+            &:hover {
+                background: #005881;
+                cursor: pointer;
+            }
+        }
+
+        .characterCreator_setAppearance_Categories {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .characterCreator_setAppearance_ArrowsBox {
+        position: absolute;
+        bottom: 2vh;
+        align-self: center;
+        text-align: center;
+        color: #006992;
+        font-size: 4rem;
+        display: flex;
+
+        .characterCreator_setAppearance_Camera {
+            margin: 2rem;
+            color: #fff;
+        }
+
+        .characterCreator_setAppearance_Arrow {
+            margin: 2rem;
+
+            &:hover {
+                color: #005881;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .characterCreator_setAppearance_Save_Button {
+        position: absolute;
+        bottom: 5vh;
+        right: 5vw;
+        width: auto;
+        background: #006992;
+        outline: none;
+        border: none;
+        border-radius: 1rem;
+        color: #fff;
+        margin: 1rem;
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 1.6rem;
+
+        &:hover {
+            background: #005881;
+            cursor: pointer;
+        }
+
+        &:disabled {
+            background: #666;
+        }
+    }
+
+    .characterCreator_setAppearance_ChosenSex {
+        position: absolute;
+        top: 5vh;
+        right: 5vw;
+        background: #006992;
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 4.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .characterCreator_setAppearance_chosenSex_Text {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        &:hover {
+            background: #005881;
+            cursor: pointer;
+        }
+    }
+
+    .characterCreator_appearanceEditor {
+        min-height: 90%;
+        max-height: 90%;
+        overflow-y: scroll;
+    }
+
+    .characterCreator_appearanceEditor_featuresList {
+        overflow: scroll;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .characterCreator_feature {
+        text-align: center;
+
+        .characterCreator_feature_changer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .characterCreator_feature_name {
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+
+        .characterCreator_feature_value {
+            font-size: 1.8rem;
+            color: #006992;
+            margin: 0.5rem;
+            font-weight: bold;
+        }
+
+        .characterCreator_feature_arrow {
+            color: #006992;
+            font-size: 1.8rem;
+
+            &:hover {
+                color: #005881;
+                cursor: pointer;
+            }
+        }
+    }
+}

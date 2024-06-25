@@ -1,0 +1,453 @@
+.authPanel_box_logo {
+    padding: 1.2vh;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 5vh;
+
+    img {
+        width: 15vw;
+        height: 12vh;
+    }
+}
+
+.authPanel_box {
+    background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)),
+        linear-gradient(
+            to right,
+            rgba(0, 105, 146, 0.8),
+            rgba(60, 166, 214, 0.8)
+        );
+    border-radius: 1rem;
+    width: 60vw;
+    min-height: 60vh;
+    max-height: 60vh;
+    border: 5px solid #006992;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+.authPanel_box_content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 10px;
+    max-height: 100%;
+    flex-direction: row;
+}
+
+.authPanel_box_content h3 {
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 5px solid #006992;
+    text-align: left;
+    border-radius: 0.5rem;
+}
+
+.authPanel_information {
+    flex-grow: 1;
+    padding: 10px;
+    max-width: 30%;
+}
+
+.authPanel_authPanel_login {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.authPanel_updates {
+    flex-grow: 1;
+    padding: 10px;
+    max-width: 30%;
+}
+
+.authPanel_menuButton {
+    background: #006992;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 10px;
+    border: 2px solid #005881;
+    outline: none;
+    color: #fff;
+    margin-top: 10px;
+    min-width: 100%;
+}
+
+.authPanel_menuButton:hover {
+    background: #005881;
+    cursor: pointer;
+}
+
+.authPanel_submit {
+    background: #006992;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 10px;
+    border: 2px solid #005881;
+    outline: none;
+    color: #fff;
+    margin: 10px;
+    min-width: 70%;
+}
+
+.authPanel_submit:hover {
+    background: #005881;
+    cursor: pointer;
+}
+
+.authPanel_submit_discord {
+    background: #7289da;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 10px;
+    border: 2px solid #5067b8;
+    outline: none;
+    color: #fff;
+    margin: 10px;
+    min-width: 70%;
+
+    &:hover {
+        background: #5067b8;
+        cursor: pointer;
+    }
+}
+
+.authPanel_input {
+    outline: none;
+    background: #6a6a6a;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 0 1rem 1rem 0;
+    border: 2px solid transparent;
+    font-family: "Source Code Pro", monospace;
+    width: 100%;
+    min-height: 100%;
+}
+
+.authPanel_input::placeholder {
+    color: #fff;
+    font-family: "Source Code Pro", monospace;
+}
+
+.authPanel_input:focus {
+    border-bottom: 4px solid #005881;
+}
+
+.authPanel_input:hover {
+    cursor: text;
+}
+
+.authPanel_stats_content {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.authPanel_social {
+    display: flex;
+}
+
+.authPanel_fb {
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background: #3b5998;
+    margin: 10px;
+    width: 33%;
+}
+
+.authPanel_yt {
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background: #c4302b;
+    margin: 10px;
+    width: 33%;
+}
+
+.authPanel_input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    min-width: 70%;
+}
+
+.authPanel_input-icon {
+    background: #006992;
+    padding: 10px;
+    border-radius: 1rem 0 0 1rem;
+    font-size: 2.2rem;
+    line-height: normal;
+    min-height: 100%;
+}
+
+.authPanel_input-box:has(> input:focus) .authPanel_input-icon {
+    background: #005881;
+}
+
+.authPanel_box_content_text {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 53vh;
+    max-height: 53vh;
+    text-align: justify;
+    padding: 1.3rem;
+    box-sizing: border-box;
+    min-width: 70%;
+    max-width: 70%;
+    font-size: 1.2rem;
+
+    .markdown-content {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: visible !important;
+    }
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #006992 transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #006992;
+    border-radius: 10px;
+    border: 3px solid transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.authPanel_box_content_buttons {
+    width: 30%;
+    max-width: 30%;
+    min-width: 30%;
+    min-height: 53vh;
+    max-height: 53vh;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow-x: visible;
+    overflow-y: scroll;
+}
+
+.authPanel_active_tab {
+    background: #005881;
+    color: #eaeaea;
+}
+
+.authPanel_checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px !important;
+    max-width: 70%;
+}
+
+.authPanel_checkbox {
+    display: none;
+}
+
+.authPanel_checkbox-label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: "Source Code Pro", monospace;
+    max-width: 70%;
+}
+
+.authPanel_checkbox-label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #005881;
+    border-radius: 4px;
+    background: #006992;
+}
+
+.authPanel_checkbox-label::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    width: 8px;
+    height: 14px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.authPanel_checkbox:checked + .authPanel_checkbox-label::after {
+    display: block;
+}
+
+.authPanel_checkbox:checked + .authPanel_checkbox-label::before {
+    border-color: #005881;
+    background: #005881;
+}
+
+.authPanel_checkbox:focus + .authPanel_checkbox-label::before {
+    box-shadow: 0 0 0 3px rgba(0, 88, 129, 0.6);
+}
+
+.authPanel_rules_header {
+    text-align: center;
+}
+
+.authPanel_input_error {
+    background: #c72c1c;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 1rem;
+    min-width: 70%;
+    max-width: 70%;
+    font-size: 0.8rem;
+}
+
+.authPanel_box_content_login {
+    min-height: 53vh;
+    max-height: 53vh;
+    text-align: justify;
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+
+    p {
+        font-size: 1.2rem;
+        max-width: 70%;
+    }
+
+    img {
+        margin: 2rem;
+        width: 20vh;
+        height: 20vh;
+    }
+}
+
+.rulesContent {
+    max-width: 90%;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.authPanel_success {
+    background: #009923;
+    color: #fff;
+    padding: 1rem;
+    max-width: 70%;
+    min-width: 70%;
+    border-radius: 1rem;
+    margin: 3vh;
+}
+
+.updatesContent {
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.authPanel_update {
+    background: #006992;
+    color: #fff;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    min-height: 15vh;
+    max-height: 15vh;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:hover {
+        background: #005881;
+        cursor: pointer;
+    }
+}
+
+.authPanel_update_photoBox {
+    flex-grow: 1;
+
+    img {
+        min-width: 7vw;
+        min-height: 10vh;
+        max-width: 7vw;
+        max-height: 10vh;
+    }
+}
+
+.authPanel_update_content {
+    flex-grow: 6;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.authPanel_update_shortDescription {
+    display: inline-block;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.authPanel_update_title {
+    font-size: 1.6rem;
+}
+
+.authPanel_update_date {
+    margin-top: 2rem;
+}
+
+.authPanel_update_date {
+    p {
+        line-height: 1rem;
+    }
+}

@@ -1,0 +1,174 @@
+/// Poprawa dla niższych rozdzielczości oraz dodanie wersji projektu na dole po prawej
+
+.hud {
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    font-family: 'Source Code Pro', monospace;
+
+    .hudSectionBottom {
+        min-width: 28vw;
+        max-width: 28vw;
+        justify-self: start;
+        align-self: end;
+        margin-bottom: 22vh;
+    }
+
+
+    .hudSectionTop {
+        min-width: 38vw;
+        max-width: 38vw;
+        justify-self: end;
+        align-self: start;
+        transform: scaleX(-1);
+        display: flex;
+
+        .hudElement_Icon {
+            transform: scaleX(-1);
+        }
+
+        .hudElement_Text {
+            transform: scaleX(-1);
+        }
+
+        .hudAvatar {
+
+            margin-top: 2.5vh;
+            margin-left: 5vw;
+            padding: 0.2rem;
+
+
+            img {
+                border-radius: 20rem;
+                background: #005881;
+                width: 5vw;
+                height: 5vw;
+                padding: 0.2rem;
+                border: 0.5rem solid #006992;
+            }
+        }
+    }
+
+    .hudElement {
+        border-radius: 0 1rem 1rem 0;
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.2vh;
+        background: #6e6e6e;
+        line-height: 1.2vh;
+        text-align: center;
+
+        p {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .hudElement_Icon {
+            height: 100%;
+            width: 2.5vw;
+            padding: 1rem;
+        }
+
+        .hudElement_Text {
+            padding: 0 1rem 0 1rem;
+        }
+    }
+
+    .hudID {
+        width: 13vw;
+        background: #043b5c;
+
+        .hudElement_Icon {
+            background: #076e8f;
+        }
+        
+    }
+
+    @media(max-width: 1500px) {
+        .hudID {
+            width: 18vw;
+        }
+    }
+
+    .hudUsername {
+        width: 15vw;
+        background: #5a228b;
+
+        .hudElement_Icon {
+            background: #8d55ae;
+        }
+    }
+
+    .hudRank {
+        width: 15vw;
+        background: #2e3131;
+
+        .hudElement_Icon {
+            background: #5f6464;
+        }
+    }
+
+    .hudPremium {
+        width: 6vw;
+        background: #f9690e;
+
+        .hudElement_Icon {
+            background: #fb9b3f;
+        }
+    }
+
+    @media(max-width: 1500px) {
+        .hudPremium {
+            width: 11vw;
+        }
+    }
+
+    .hudDuty {
+        width: 6vw;
+        background: #1e8bc3;
+
+        .hudElement_Icon {
+            background: #4faef6;
+        }
+    }
+
+    .hudMoney {
+        width: 11vw;
+        background: #1e824c;
+
+        .hudElement_Icon {
+            background: #4fa57f;
+        }
+    }
+
+    @media(max-width: 1500px) {
+        .hudMoney {
+            width: 16vw;
+        }
+    }
+
+    .hudPoints {
+        width: 9vw;
+        background: #4d13d1;
+
+        .hudElement_Icon {
+            background: #7f46f4;
+        }
+    }
+    
+
+}
+
+.hudVersion {
+    position: absolute;
+    right: 10vw;
+    bottom: 2.5vh;
+    font-weight: bold;
+    font-size: 0.8rem;
+}

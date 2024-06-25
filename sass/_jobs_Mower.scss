@@ -1,0 +1,118 @@
+#jobs_mower {
+    width: 100vw;
+    height: 100vh;
+
+    .jobMower_container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jobMower_box {
+        background: linear-gradient(
+                rgba(34, 34, 34, 0.8),
+                rgba(34, 34, 34, 0.8)
+            ),
+            linear-gradient(
+                to right,
+                rgba(0, 105, 146, 0.8),
+                rgba(60, 166, 214, 0.8)
+            );
+        width: 60vw;
+        border-radius: 1rem;
+        border: 5px solid #006992;
+        display: flex;
+        -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+        box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+        padding: 1rem;
+    }
+
+    .jobMower_miniatures {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        width: 40%;
+
+        img {
+            width: 20vw;
+            border: 5px solid #006992;
+            border-radius: 1rem;
+            z-index: 2;
+
+            &:nth-of-type(2) {
+                transform: rotate(5deg);
+                z-index: 1;
+            }
+        }
+    }
+
+    .jobMower_information {
+        text-align: center;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #9a9a9a;
+        }
+
+        h5 {
+            font-size: 1.5rem;
+        }
+
+        .jobMower_level {
+            margin-bottom: 1rem;
+
+            .jobMower_level_icon {
+                font-size: 3rem;
+                margin-right: 2rem;
+            }
+
+            .jobMower_level_description {
+                font-size: 1.4rem;
+                text-align: justify;
+                line-height: 1.4rem;
+            }
+
+            background: #006992;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 1rem;
+            align-items: center;
+
+            &:hover {
+                background: #005881;
+                cursor: pointer;
+            }
+        }
+
+        .jobMower_button {
+            background: #006992;
+            border-radius: 1rem;
+            outline: none;
+            border: none;
+            color: #fff;
+            font-size: 1.8rem;
+            padding: 1rem;
+            text-align: center;
+
+            &:hover {
+                cursor: pointer;
+                background: #005881;
+            }
+        }
+    }
+}

@@ -1,0 +1,161 @@
+.WWW_Dashboard_Body {
+    background: url(https://images6.alphacoders.com/109/1095888.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+    color: #fff;
+}
+
+.WWW_Dashboard_Header {
+    background: #006992;
+    min-width: 100%;
+    min-height: 40px;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.WWW_Dashboard_Header_Logo {
+    font-size: 18px;
+    margin-left: 10px; 
+    font-weight: bold;
+}
+
+.WWW_Dashboard_Header_User {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WWW_Dashboard_Header_User_Avatar {
+    
+    img {
+        min-width: 30px;
+        max-height: 30px;
+        max-width: 30px;
+        max-height: 30px;
+        border-radius: 120px;
+    }
+
+}
+
+.WWW_Dashboard_Header_User_Logout {
+    font-size: 18px;
+    padding: 5px;
+
+    &:hover {
+        color: #aaa;
+        cursor: pointer;
+    }
+}
+
+.WWW_Dashboard_Header_User_Username {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.WWW_Dashboard_Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+.WWW_Dashboard_Content {
+    width: 75%;
+    background: linear-gradient(rgba(34,34,34,0.8), rgba(34,34,34,0.8)), 
+    linear-gradient(to right, rgba(0, 105, 146, 0.8), rgba(60, 166,214, 0.8));
+    border-radius: 1rem 1rem 1rem 1rem;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    border: 2px solid #006992;
+    margin: 20px;
+    padding: 20px;
+}
+
+.WWW_Dashboard_Menu_Options {
+    width: 25%;
+    padding: 10px;
+    min-height: 600px;
+    margin: 20px;
+    background: linear-gradient(rgba(34,34,34,0.8), rgba(34,34,34,0.8)), 
+    linear-gradient(to right, rgba(0, 105, 146, 0.8), rgba(60, 166,214, 0.8));
+    border-radius: 1rem 1rem 1rem 1rem;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    border: 2px solid #006992;
+}
+
+.WWW_Dashboard_Menu_Option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #006992;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background: #005881;
+    }
+}
+
+.WWW_Dashboard_Menu_isCategory_Box {
+    display: none;
+    list-style-type: none;
+}
+
+.WWW_Dashboard_Menu_Suboption {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border: 4px solid #006992;
+    padding: 3px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        border: 4px solid #005881;
+    }
+}
+
+.WWW_Dashboard_MainPage {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.WWW_Dashboard_MainPage_Box {
+    background: #2c3e50;
+    flex: 1;
+    padding: 15px;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin: 10px;
+    border: 2px solid #006992;
+}
+
+.WWW_Dashboard_MainPage_hideEmail {
+    background: #444;
+    padding: 2px;
+    cursor: pointer;
+}
